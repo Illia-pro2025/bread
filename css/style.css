@@ -7,6 +7,9 @@
   margin: 0 auto;
   outline: solid red;
 }
+header {
+  background-image: url(../images/font\ header.png);
+}
 .hero {
   background-image: url(../images/font\ header.png);
   background-repeat: no-repeat;
@@ -111,6 +114,7 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
 .h4-hero {
   font-family: "Inter";
   font-weight: 200;
@@ -136,7 +140,216 @@
   font-size: 16px;
   line-height: 100%;
   background-color: #c85312;
+  margin: 35px auto;
 }
 .btn > a {
   color: var(--white);
+}
+.Menu {
+  background-color: #202023;
+  height: 775px;
+}
+.Menu > div {
+  height: 775px;
+}
+.h2-menu {
+  font-family: "Inter";
+  font-weight: 100;
+  font-size: 64px;
+  line-height: 100%;
+  color: var(--white);
+  text-align: center;
+}
+.list-menu {
+  display: flex;
+  justify-content: space-between;
+  gap: 197px;
+}
+.h3-menu {
+  font-family: "Inter";
+  font-weight: 800;
+  font-size: 25.92px;
+  line-height: 100%;
+  color: var(--white);
+  text-align: center;
+}
+.div-menu {
+  border: 1px solid var(--white);
+}
+.villains {
+  display: block;
+  background-image: linear-gradient(89.59deg, #000000 8.49%, #03030300),
+    url(../images/font-main.jpg);
+  height: 580px;
+}
+.h2-villains {
+  font-family: "Italiana";
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 100%;
+  color: #d9d9d9;
+  padding: 55px 540px 0px 165px;
+}
+.h3-villains {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  color: var(--white);
+}
+.list-villains {
+  display: flex;
+  justify-content: space-between;
+}
+.item-villains:nth-child(1)::before {
+  content: "";
+  width: 219px;
+  height: 183px;
+  display: block;
+  background-image: url(../images/order.png);
+  margin-bottom: 10px;
+}
+.item-villains:nth-child(2)::before {
+  content: "";
+  width: 218px;
+  height: 194px;
+  display: block;
+  background-image: url(../images/fresh-food.png);
+  margin-bottom: 13px;
+}
+.item-villains:nth-child(3)::before {
+  content: "";
+  width: 218px;
+  height: 183px;
+  display: block;
+  background-image: url(../images/hotel.png);
+  margin-bottom: 9px;
+}
+.item-villains:nth-child(1) {
+  margin: 132px 0px 52px 230px;
+}
+.item-villains:nth-child(2) {
+  margin: 119px 147px 51px 171px;
+}
+.item-villains:nth-child(3) {
+  margin: 111px 178px 74px 0px;
+}
+.navigation {
+  height: 704px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #202023;
+}
+.h2-item-navigation {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 100%;
+  color: var(--white);
+}
+.h2-navigation {
+  font-family: "Italiana";
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 100%;
+  color: var(--white);
+  margin: 66px 0px 44px 160px;
+}
+.h2-how {
+  width: 175px;
+  height: 44px;
+  text-align: left;
+
+  margin: 180px 86px 49px 132px;
+}
+.h2-when {
+  margin: 185px 251px 45px 0px;
+}
+.h2-navigation::after {
+  content: "";
+  width: 535px;
+  height: 487px;
+  display: block;
+  background-image: url(../images/navigation.png);
+  margin-top: 44px;
+}
+.text-navigation {
+  font-family: "Inter";
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 100%;
+  color: var(--white);
+  margin: 65px 0px 65px 132px;
+}
+.text-navigation-when {
+  font-family: "Inter";
+  font-weight: 200;
+  font-size: 24px;
+  line-height: 100%;
+  text-align: center;
+  color: var(--white);
+  margin: 0px 205px 373px 9px;
+}
+.footer {
+  height: 351px;
+  background-color: #202023;
+}
+.div-footer {
+  display: flex;
+  justify-content: space-between;
+}
+.list-footer {
+  display: flex;
+  justify-content: space-between;
+}
+.h2-footer {
+  font-family: "Inter";
+  font-weight: 200;
+  font-size: 40px;
+  line-height: 100%;
+  color: var(--white);
+  margin: 62px 77px 16px 160px;
+  height: 96px;
+  width: 322px;
+}
+.p-footer {
+  font-family: "Inter";
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 100%;
+  color: var(--white);
+  margin: 0px 207px 85px 177px;
+}
+.a-footer {
+  font-family: "Inter";
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 100%;
+  text-align: center;
+  color: var(--white);
+}
+.text-footer {
+  font-family: "Inter";
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 100%;
+  color: var(--white);
+}
+.item-footer:nth-child(1) {
+  margin: 40px 141px 152px 0px;
+}
+.item-footer:nth-child(2) {
+  margin: 40px 146px 183px 0px;
+}
+.item-footer:nth-child(3) {
+  margin: 40px 119px 154px 0px;
+}
+.time{
+  font-family: "Inter";
+font-weight: 100;
+font-size: 20px;
+line-height: 100%;
+
+color: var(--white);
+margin: 0px 570px 44px 570px;
 }
