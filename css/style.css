@@ -2,21 +2,30 @@
   --white: #ffffff;
 }
 .container {
-  width: 1431px;
+  width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
   outline: solid red;
 }
-header {
-  background-image: url(../images/font\ header.png);
+body {
+  background-color: #202023;
+}
+.header {
+  position: absolute;
+  top: 55px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
 }
 .hero {
   background-image: url(../images/font\ header.png);
   background-repeat: no-repeat;
   background-position: center;
+  padding-top: 155px;
+  padding-bottom: 33px;
+  position: relative;
 }
 .nav {
-  padding: 55px 717px 71px 156px;
 }
 .list-header {
   display: flex;
@@ -33,7 +42,8 @@ header {
   font-weight: 200;
   font-size: 70px;
   color: var(--white);
-  padding: 71px 724px 22px 146px;
+  margin-bottom: 22px;
+  max-width: 560px;
 }
 .text {
   font-family: "Inter";
@@ -41,14 +51,14 @@ header {
   font-size: 21px;
   color: var(--white);
   line-height: 100%;
-  padding: 0px 700px 33px 160px;
+  margin-bottom: 33px;
+  max-width: 560px;
 }
 .button {
-  width: 207px;
-  height: 57px;
+  padding: 16px 33px;
   border-radius: 17px;
   background-color: #b47b48;
-  margin: 0px 1067px 125px 157px;
+  margin-bottom: 125px;
 }
 .a-button {
   font-family: "Inter";
@@ -60,6 +70,7 @@ header {
 }
 .list-hero {
   display: flex;
+  justify-content: space-between;
 }
 .item-hero {
   background-color: #272727;
@@ -69,7 +80,6 @@ header {
   justify-content: space-between;
   width: 310px;
   height: 225px;
-  margin: 0px 104px 36px 104px;
 }
 .item-hero:nth-child(2) {
   display: flex;
@@ -82,7 +92,6 @@ header {
   justify-content: space-between;
   width: 350px;
   height: 225px;
-  margin: 0px 75px 36px 120px;
 }
 .item-hero:nth-child(1)::before {
   content: "";
@@ -145,12 +154,10 @@ header {
 .btn > a {
   color: var(--white);
 }
-.Menu {
+.menu {
   background-color: #202023;
-  height: 775px;
-}
-.Menu > div {
-  height: 775px;
+  padding-bottom: 73px;
+ 
 }
 .h2-menu {
   font-family: "Inter";
@@ -159,10 +166,12 @@ header {
   line-height: 100%;
   color: var(--white);
   text-align: center;
+  margin-top: 21px;
+  margin-bottom: 18px;
 }
 .list-menu {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   gap: 197px;
 }
 .h3-menu {
@@ -174,13 +183,39 @@ header {
   text-align: center;
 }
 .div-menu {
-  border: 1px solid var(--white);
+  border: 1px solid var(--white);  
+  width: 357px;
+  height: 291px;
+}
+.image-first{
+ height: 239px;
+ width: 328px;
+ 
+}
+
+.item-menu::after {
+  content: "order";
+  width: 160px;
+  height: 41px;
+  display: block;
+  border-radius: 17px;
+  background-color: #b47b48;
+  font-family: "Inter";
+  font-weight: 800;
+  font-size: 25.92px;
+  line-height: 100%;
+  color: var(--white);
+  text-align: center;
+  margin: 5px auto;
 }
 .villains {
   display: block;
   background-image: linear-gradient(89.59deg, #000000 8.49%, #03030300),
     url(../images/font-main.jpg);
-  height: 580px;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 56px  ;
+  padding-top: 54px ;
 }
 .h2-villains {
   font-family: "Italiana";
@@ -188,7 +223,8 @@ header {
   font-size: 48px;
   line-height: 100%;
   color: #d9d9d9;
-  padding: 55px 540px 0px 165px;
+  margin-bottom: 110px ;
+   margin-right: 500px;
 }
 .h3-villains {
   font-family: "Inter";
@@ -226,19 +262,17 @@ header {
   margin-bottom: 9px;
 }
 .item-villains:nth-child(1) {
-  margin: 132px 0px 52px 230px;
 }
 .item-villains:nth-child(2) {
-  margin: 119px 147px 51px 171px;
 }
 .item-villains:nth-child(3) {
-  margin: 111px 178px 74px 0px;
 }
 .navigation {
-  height: 704px;
   display: flex;
   justify-content: space-between;
   background-color: #202023;
+  padding-bottom: 50px ;
+  padding-top:66px ;
 }
 .h2-item-navigation {
   font-family: "Inter";
@@ -253,17 +287,13 @@ header {
   font-weight: 400;
   line-height: 100%;
   color: var(--white);
-  margin: 66px 0px 44px 160px;
 }
 .h2-how {
   width: 175px;
   height: 44px;
   text-align: left;
-
-  margin: 180px 86px 49px 132px;
 }
 .h2-when {
-  margin: 185px 251px 45px 0px;
 }
 .h2-navigation::after {
   content: "";
@@ -279,7 +309,6 @@ header {
   font-size: 24px;
   line-height: 100%;
   color: var(--white);
-  margin: 65px 0px 65px 132px;
 }
 .text-navigation-when {
   font-family: "Inter";
@@ -288,19 +317,20 @@ header {
   line-height: 100%;
   text-align: center;
   color: var(--white);
-  margin: 0px 205px 373px 9px;
 }
 .footer {
-  height: 351px;
   background-color: #202023;
+  padding-bottom: 44px;
+  padding-top: 40px;
 }
 .div-footer {
   display: flex;
-  justify-content: space-between;
+  
 }
 .list-footer {
   display: flex;
   justify-content: space-between;
+  gap: 120px;
 }
 .h2-footer {
   font-family: "Inter";
@@ -308,9 +338,9 @@ header {
   font-size: 40px;
   line-height: 100%;
   color: var(--white);
-  margin: 62px 77px 16px 160px;
-  height: 96px;
-  width: 322px;
+  margin-top: 62px;
+  margin-bottom: 16px ;
+  
 }
 .p-footer {
   font-family: "Inter";
@@ -318,7 +348,6 @@ header {
   font-size: 20px;
   line-height: 100%;
   color: var(--white);
-  margin: 0px 207px 85px 177px;
 }
 .a-footer {
   font-family: "Inter";
@@ -336,20 +365,54 @@ header {
   color: var(--white);
 }
 .item-footer:nth-child(1) {
-  margin: 40px 141px 152px 0px;
 }
 .item-footer:nth-child(2) {
-  margin: 40px 146px 183px 0px;
 }
 .item-footer:nth-child(3) {
-  margin: 40px 119px 154px 0px;
 }
-.time{
+.time {
   font-family: "Inter";
-font-weight: 100;
-font-size: 20px;
-line-height: 100%;
+  font-weight: 100;
+  font-size: 20px;
+  line-height: 100%;
+  color: var(--white);
+  display: block;
+  margin-top: 85px  ;
+  text-align: center;
+}
+.stars {
+  background-color: #202023;
+  padding-bottom: 48px;
+  padding-top: 90px;
+}
+.h2-stars {
+  font-family: "Italiana";
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 100%;
+  color: var(--white);
+  text-align: center;
+  
+  margin-bottom:14px  ;
+ 
+}
+.list-number {
 
-color: var(--white);
-margin: 0px 570px 44px 570px;
+}
+.list-stars-number {
+}
+.list-number-last {
+ 
+}
+.list-stars {
+  display: flex;
+  background-image: url(../images/Group\ 54\ \(1\).png);
+}
+
+.item-number {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 100%;
+  color: var(--white);
 }
