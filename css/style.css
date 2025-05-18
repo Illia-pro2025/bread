@@ -53,12 +53,7 @@ body {
   margin-bottom: 33px;
   max-width: 560px;
 }
-.button {
-  padding: 16px 33px;
-  border-radius: 17px;
-  background-color: #b47b48;
-  margin-bottom: 125px;
-}
+
 .a-button {
   font-family: "Inter";
   font-weight: 300;
@@ -66,6 +61,10 @@ body {
   line-height: 100%;
   letter-spacing: 0%;
   color: var(--white);
+  padding: 16px 33px;
+  border-radius: 17px;
+  background-color: #b47b48;
+  margin-bottom: 125px;
 }
 .list-hero {
   display: flex;
@@ -73,56 +72,9 @@ body {
 }
 .item-hero {
   background-color: #272727;
-}
-.item-hero:nth-child(1) {
+  padding: 50px 19px ;
   display: flex;
-  justify-content: space-between;
-  width: 310px;
-  height: 225px;
 }
-.item-hero:nth-child(2) {
-  display: flex;
-  justify-content: space-between;
-  width: 350px;
-  height: 225px;
-}
-.item-hero:nth-child(3) {
-  display: flex;
-  justify-content: space-between;
-  width: 350px;
-  height: 225px;
-}
-.item-hero:nth-child(1)::before {
-  content: "";
-  width: 162px;
-  height: 225px;
-  display: block;
-  background-image: url(../images/cookie.png);
-  background-color: #272727;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.item-hero:nth-child(2)::before {
-  content: "";
-  width: 250px;
-  height: 225px;
-  display: block;
-  background-image: url(../images/croissan.png);
-  background-color: #272727;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.item-hero:nth-child(3)::before {
-  content: "";
-  width: 199px;
-  height: 225px;
-  display: block;
-  background-image: url(../images/tarte.png);
-  background-color: #272727;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 .h4-hero {
   font-family: "Inter";
   font-weight: 200;
@@ -141,6 +93,9 @@ body {
   color: var(--white);
   margin-top: 13px ;
 }
+.div-div-hero{
+  max-width: 120px;
+}
 .btn {
   width: 79px;
   height: 34px;
@@ -151,13 +106,11 @@ body {
   line-height: 100%;
   background-color: #c85312;
   margin: 35px auto;
-
+color: var(--white);
  
 
 }
-.btn > a {
-  color: var(--white);
-}
+
 .menu {
   background-color: #202023;
   padding-bottom: 73px;
