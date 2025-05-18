@@ -26,7 +26,7 @@ body {
   position: relative;
 }
 
-.list-header {
+.header-list {
   display: flex;
   gap: 20px;
 }
@@ -36,7 +36,7 @@ body {
   color: var(--white);
   line-height: 100%;
 }
-.h1-header {
+.header-h1 {
   font-family: "Inter";
   font-weight: 200;
   font-size: 70px;
@@ -54,7 +54,7 @@ body {
   max-width: 560px;
 }
 
-.a-button {
+.button-a {
   font-family: "Inter";
   font-weight: 300;
   font-size: 24px;
@@ -66,16 +66,21 @@ body {
   background-color: #b47b48;
   margin-bottom: 125px;
 }
-.list-hero {
+.hero-list {
   display: flex;
   justify-content: space-between;
 }
-.item-hero {
+.hero-item {
   background-color: #272727;
-  padding: 50px 19px ;
+  padding: 0px 19px ;
   display: flex;
+
 }
-.h4-hero {
+.hero-item:hover,
+.hero-item:focus{
+  background-image: linear-gradient( 81.4deg, #000000 -110.34%,#EBAD51 80.32%);
+}
+.hero-h4 {
   font-family: "Inter";
   font-weight: 200;
   font-size: 24px;
@@ -84,7 +89,7 @@ body {
   color: var(--white);
   margin-top: 51px;
 }
-.p-hero {
+.hero-p {
   text-align: center;
   font-family: "Inter";
   font-weight: 500;
@@ -93,7 +98,7 @@ body {
   color: var(--white);
   margin-top: 13px ;
 }
-.div-div-hero{
+.hero-div-div{
   max-width: 120px;
 }
 .btn {
@@ -116,7 +121,7 @@ color: var(--white);
   padding-bottom: 73px;
  
 }
-.h2-menu {
+.menu-h2 {
   font-family: "Inter";
   font-weight: 100;
   font-size: 64px;
@@ -126,19 +131,19 @@ color: var(--white);
   margin-top: 21px;
   margin-bottom: 18px;
 }
-.list-menu {
+.menu-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.item-menu{
+.menu-item{
   margin-right: 198px ;
   
 }
-.item-menu:nth-child(2n){
+.menu-item:nth-child(2n){
   margin-right: 0px;
 }
-.h3-menu {
+.menu-h3 {
   font-family: "Inter";
   font-weight: 800;
   font-size: 25.92px;
@@ -146,7 +151,7 @@ color: var(--white);
   color: var(--white);
   text-align: center;
 }
-.div-menu {
+.menu-div {
   border: 1px solid var(--white);  
   width: 328px;
   height: 300px;
@@ -159,7 +164,7 @@ color: var(--white);
  height: 239px;
  width: 328px;
 }
-.button-menu {
+.menu-button {
   
   display: block;
   border-radius: 17px;
@@ -183,7 +188,7 @@ color: var(--white);
   padding-bottom: 56px  ;
   padding-top: 54px ;
 }
-.h2-villains {
+.villains-h2 {
   font-family: "Italiana";
   font-weight: 400;
   font-size: 48px;
@@ -192,41 +197,20 @@ color: var(--white);
   margin-bottom: 110px ;
    margin-right: 500px;
 }
-.h3-villains {
+.villains-h3 {
   font-family: "Inter";
   font-weight: 700;
   font-size: 24px;
   line-height: 100%;
   color: var(--white);
+  margin-top: 10px;
 }
-.list-villains {
+.villains-list {
   display: flex;
   justify-content: space-between;
 }
-.item-villains:nth-child(1)::before {
-  content: "";
-  width: 219px;
-  height: 183px;
-  display: block;
-  background-image: url(../images/order.png);
-  margin-bottom: 10px;
-}
-.item-villains:nth-child(2)::before {
-  content: "";
-  width: 218px;
-  height: 194px;
-  display: block;
-  background-image: url(../images/fresh-food.png);
-  margin-bottom: 13px;
-}
-.item-villains:nth-child(3)::before {
-  content: "";
-  width: 218px;
-  height: 183px;
-  display: block;
-  background-image: url(../images/hotel.png);
-  margin-bottom: 9px;
-}
+
+
 .navigation {
   display: flex;
   justify-content: space-between;
@@ -239,43 +223,38 @@ color: var(--white);
   justify-content: space-between;
   
 }
-.h2-item-navigation {
+.navigation-item-h2 {
   font-family: "Inter";
   font-weight: 400;
   font-size: 40px;
   line-height: 100%;
   color: var(--white);
 }
-.h2-navigation {
+.navigation-h2 {
   font-family: "Italiana";
   font-size: 48px;
   font-weight: 400;
   line-height: 100%;
   color: var(--white);
 }
-.h2-how {
+.how-h2 {
   margin-top: 114px;
   text-align: left;
 }
-.h2-when {
+.when-h2 {
   margin-top: 119px;
 }
-.h2-navigation::after {
-  content: "";
-  width: 535px;
-  height: 487px;
-  display: block;
-  background-image: url(../images/navigation.png);
-  margin-top: 44px;
+.navigation-img {
+   margin-top: 44px;
 }
-.text-navigation {
+.navigation-text {
   font-family: "Inter";
   font-weight: 300;
   font-size: 24px;
   line-height: 100%;
   color: var(--white);
 }
-.text-navigation-how {
+.navigation-how-text {
   font-family: "Inter";
   font-weight: 300;
   font-size: 24px;
@@ -284,7 +263,7 @@ color: var(--white);
   margin-top: 49px ;
   margin-bottom: 65px ;
 }
-.text-navigation-when {
+.navigation-when-text {
   font-family: "Inter";
   font-weight: 200;
   font-size: 24px;
@@ -299,11 +278,11 @@ color: var(--white);
   padding-top: 40px;
 
 }
-.div-footer {
+.footer-div {
   display: flex;
   align-items: center;
 }
-.list-footer {
+.footer-list {
   display: flex;
   justify-content: space-between;
   gap: 120px;
@@ -317,14 +296,14 @@ color: var(--white);
   margin-bottom: 16px ;
   margin-right: 77px ;
 }
-.p-footer {
+.footer-p {
   font-family: "Inter";
   font-weight: 300;
   font-size: 20px;
   line-height: 100%;
   color: var(--white);
 }
-.a-footer {
+.footer-a {
   display: inline-block;
   font-family: "Inter";
   font-weight: 300;
@@ -335,7 +314,7 @@ color: var(--white);
   margin-bottom: 41px ;
   
 }
-.text-footer {
+.footer-text {
   
   font-family: "Inter";
   font-weight: 300;
@@ -361,65 +340,39 @@ color: var(--white);
   background-image: url(../images/Group\ 54\ \(1\).png);
 
 }
-.h2-stars {
-  font-family: "Italiana";
-  font-weight: 400;
-  font-size: 64px;
-  line-height: 100%;
-  color: var(--white);
-  text-align: center;
-  
-  margin-bottom:14px  ;
- 
-}
+
 .number{
   background-color: gray;
 }
-.item-number:nth-child(1){
+.number-item:nth-child(1){
   padding-top: 32px;
 }
-.item-number:nth-child(4){
+.number-item:nth-child(4){
   padding-bottom: 50px;
 }
-.list-number::before {
- content: "";
- display: inline-block;
- width: 355px;
-height: 223px;
-background-image: url(../images/bread.png);
-background-repeat: no-repeat;
- 
-}
-.list-stars-number{
-  margin-top: 84px;
+
+.stars-number-list{
   margin-left: 32px ;
   margin-right: 90px ;
 }
-.list-stars-number::before {
-  content: "";
-  display: inline-block;
-  width: 355px;
- height: 223px;
- background-image: url(../images/cookies-Menu.png);
- background-repeat: no-repeat;
+.img-tarte{
+  width: 334px;
+height: 332px;
+margin-top: 100px;
 }
-.list-number-last{
-  margin-top: 123px ;
+.img-cookies{
+  width: 275px;
+height: 284px;
+display: block;
+margin: 0px auto;
+margin-top: 80px;
 }
-.list-number-last::before {
-  content: "";
-  display: inline-block;
-  width: 355px;
- height: 223px;
- background-image: url(../images/tarte-Menu.png);
- background-repeat: no-repeat;
- 
-}
-.list-stars {
+
+.stars-list {
   display: flex;
  }
 
-.item-number {
+.number-item {
   font-family: "Inter";
   font-weight: 500;
   font-size: 24px;
