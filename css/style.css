@@ -28,7 +28,7 @@ body {
 
 .header-list {
   display: flex;
-  gap: 20px;
+  gap: 70px;
 }
 .item-nav {
   font-family: "inter";
@@ -55,6 +55,7 @@ body {
 }
 
 .button-a {
+  display: inline-block;
   font-family: "Inter";
   font-weight: 300;
   font-size: 24px;
@@ -65,6 +66,7 @@ body {
   border-radius: 17px;
   background-color: #b47b48;
   margin-bottom: 125px;
+  border: #b47b48;
 }
 .hero-list {
   display: flex;
@@ -112,6 +114,7 @@ body {
   background-color: #c85312;
   margin: 35px auto;
 color: var(--white);
+border: #c85312;
  
 
 }
@@ -177,6 +180,7 @@ color: var(--white);
   text-align: center;
   padding: 5px 45px;
   margin: 0 auto;
+  border: #b47b48;
   
 }
 .villains {
@@ -204,13 +208,15 @@ color: var(--white);
   line-height: 100%;
   color: var(--white);
   margin-top: 10px;
+  text-align: center;
 }
 .villains-list {
   display: flex;
   justify-content: space-between;
 }
-
-
+.order{
+  margin-left: 87px;
+}
 .navigation {
   display: flex;
   justify-content: space-between;
@@ -379,3 +385,8 @@ margin-top: 80px;
   line-height: 100%;
   color: var(--white);
  }
+.porfoliot{
+  
+  backdrop-filter: blur(15px);
+
+}
