@@ -1,0 +1,61 @@
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    background-color: #202023;
+    padding-bottom: 50px;
+    padding-top: 66px;
+  }
+  .navigation-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  .navigation-item-h2 {
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 100%;
+    color: var(--white);
+  }
+  .navigation-h2 {
+    font-family: "Italiana";
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 100%;
+    color: var(--white);
+  }
+  .how-h2 {
+    margin-top: 114px;
+    text-align: left;
+  }
+  .when-h2 {
+    margin-top: 119px;
+  }
+  .navigation-img {
+    margin-top: 44px;
+  }
+  .navigation-text {
+    font-family: "Inter";
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 100%;
+    color: var(--white);
+  }
+  .navigation-how-text {
+    font-family: "Inter";
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 100%;
+    color: var(--white);
+    margin-top: 49px;
+    margin-bottom: 65px;
+  }
+  .navigation-when-text {
+    font-family: "Inter";
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 100%;
+    text-align: center;
+    color: var(--white);
+    margin-top: 40px;
+  }

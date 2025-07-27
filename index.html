@@ -14,8 +14,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/recet.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
@@ -43,7 +42,9 @@
             only five centuries, but also the leap into electronic typesetting,
             remaining essentially unchanged.
           </p>
-          <button type="button" class="button-a">shop now</button>
+          <button type="button" class="button-a" data-modal-open>
+            shop now
+          </button>
           <ul class="hero-list">
             <li class="hero-item">
               <img src="./images/cookie.png" alt="cookies" />
@@ -72,6 +73,22 @@
           </ul>
         </div>
       </section>
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <h1 class="title-modal">TRADITIONAL ARTISAX BAKERY</h1>
+          <form action="">
+            <label for="" class="label"
+              ><input class="input" type="text" placeholder="Your  adress"
+            /></label>
+            <label for="" class="label"
+              ><input class="input" type="text" placeholder="Your card"
+            /></label>
+            <button class="btn-modal" type="submit" data-modal-close>
+              SHOP NOW
+            </button>
+          </form>
+        </div>
+      </div>
       <section class="menu">
         <div class="container">
           <h2 class="menu-h2">Menu</h2>
@@ -270,5 +287,6 @@
         >
       </section>
     </footer>
+    <script src="./modal.js"></script>
   </body>
 </html>

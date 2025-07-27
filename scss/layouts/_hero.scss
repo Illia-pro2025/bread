@@ -1,0 +1,91 @@
+.hero {
+  background-image: url(../images/font\ header.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 155px;
+  padding-bottom: 33px;
+  position: relative;
+}
+
+.text {
+  font-family: "Inter";
+  font-weight: 300;
+  font-size: 21px;
+  color: var(--white);
+  line-height: 100%;
+  margin-bottom: 33px;
+  max-width: 560px;
+}
+
+.button-a {
+  display: inline-block;
+  font-family: "Inter";
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 100%;
+  color: var(--white);
+  padding: 16px 33px;
+  border-radius: 17px;
+  background-color: #b47b48;
+  margin-bottom: 125px;
+  border: #b47b48;
+  transition: background-color 250ms ease-in;
+}
+
+.hero-list {
+  display: flex;
+  justify-content: space-between;
+}
+.hero-item {
+  background-image: linear-gradient(
+    81.4deg,
+    #000000 -110.34%,
+    rgb(57, 53, 53) 80.32%
+  );
+  padding: 0px 19px;
+  display: flex;
+  transition: background-image 250ms ease-in;
+  &:hover,
+  &:focus {
+    background-image: linear-gradient(
+      81.4deg,
+      #000000 -110.34%,
+      #ebad51 80.32%
+    );
+  }
+}
+
+.hero-h4 {
+  font-family: "Inter";
+  font-weight: 200;
+  font-size: 24px;
+  line-height: 100%;
+  text-align: center;
+  color: var(--white);
+  margin-top: 51px;
+}
+.hero-p {
+  text-align: center;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  color: var(--white);
+  margin-top: 13px;
+}
+.hero-div-div {
+  max-width: 120px;
+}
+.btn {
+  width: 79px;
+  height: 34px;
+  display: block;
+  font-family: "Inter";
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 100%;
+  background-color: #c85312;
+  margin: 35px auto;
+  color: var(--white);
+  border: #c85312;
+}
