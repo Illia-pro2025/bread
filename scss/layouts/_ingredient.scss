@@ -1,0 +1,43 @@
+.ingredient {
+  background-color: #202023;
+  padding-bottom: 48px;
+  padding-top: 90px;
+  background-image: url(../../images/ingredient__fon.png);
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__list--number {
+    margin-left: 32px;
+    margin-right: 90px;
+  }
+  &__item--number {
+    @extend %text;
+    font-weight: 500;
+    color: var(--white);
+     line-height: 100%;
+    letter-spacing: 0%;
+  }
+  &__item--number:nth-child(1) {
+    padding-top: 32px;
+  }
+  &__item--number:nth-child(4) {
+    padding-bottom: 50px;
+  }
+  &__image--tarte {
+    width: 334px;
+    height: 332px;
+    margin-top: 100px;
+  }
+  &__image--cookies {
+    width: 275px;
+    height: 284px;
+    display: block;
+    margin: 0px auto;
+    margin-top: 80px;
+  }
+}
+.list__number {
+  background-color: gray;
+}

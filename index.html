@@ -19,13 +19,13 @@
   <body>
     <header class="header">
       <div class="container">
-        <nav class="nav">
-          <ul class="header-list">
-            <li><a href="#" class="item-nav">About us</a></li>
-            <li><a href="#" class="item-nav">Delivery</a></li>
-            <li><a href="#" class="item-nav">Menu</a></li>
-            <li><a href="#" class="item-nav">Contacts</a></li>
-            <li><a href="#" class="item-nav">Review</a></li>
+        <nav class="header__nav">
+          <ul class="header__nav__list">
+            <li><a href="#" class="header__nav__item">About us</a></li>
+            <li><a href="#" class="header__nav__item">Delivery</a></li>
+            <li><a href="#" class="header__nav__item">Menu</a></li>
+            <li><a href="#" class="header__nav__item">Contacts</a></li>
+            <li><a href="#" class="header__nav__item">Review</a></li>
           </ul>
         </nav>
       </div>
@@ -33,8 +33,8 @@
     <main>
       <section class="hero">
         <div class="container">
-          <h1 class="header-h1">TRADITIONAL ARTISAX BAKERY</h1>
-          <p class="text">
+          <h1 class="hero__title">TRADITIONAL ARTISAX BAKERY</h1>
+          <p class="hero__text">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
@@ -42,32 +42,32 @@
             only five centuries, but also the leap into electronic typesetting,
             remaining essentially unchanged.
           </p>
-          <button type="button" class="button-a" data-modal-open>
+          <button type="button" class="hero__button" data-modal-open>
             shop now
           </button>
-          <ul class="hero-list">
-            <li class="hero-item">
+          <ul class="hero__list">
+            <li class="hero__item">
               <img src="./images/cookie.png" alt="cookies" />
-              <div class="hero-div-div">
-                <h4 class="hero-h4">$8.00(kg)</h4>
-                <p class="hero-p">American Cockie</p>
-                <button class="btn">BUY</button>
+              <div class="hero__party__info">
+                <h4 class="hero__price">$8.00(kg)</h4>
+                <p class="hero__name">American Cockie</p>
+                <button class="hero__button__info">BUY</button>
               </div>
             </li>
-            <li class="hero-item">
+            <li class="hero__item">
               <img src="./images/croissan.png" alt="croissan" />
-              <div class="hero-div-div">
-                <h4 class="hero-h4">$4.00</h4>
-                <p class="hero-p">Crushed with chockolate</p>
-                <button class="btn">BUY</button>
+              <div class="hero__party__info">
+                <h4 class="hero__price">$4.00</h4>
+                <p class="hero__name">Crushed with chockolate</p>
+                <button class="hero__button__info">BUY</button>
               </div>
             </li>
-            <li class="hero-item">
+            <li class="hero__item">
               <img src="./images/tarte.png" alt="tarte" />
-              <div class="hero-div-div">
-                <h4 class="hero-h4">For piece $4.00</h4>
-                <p class="hero-p">Blackberry pie</p>
-                <button class="btn">BUY</button>
+              <div class="hero__party__info">
+                <h4 class="hero__price">For piece $4.00</h4>
+                <p class="hero__name">Blackberry pie</p>
+                <button class="hero__button__info">BUY</button>
               </div>
             </li>
           </ul>
@@ -91,68 +91,64 @@
       </div>
       <section class="menu">
         <div class="container">
-          <h2 class="menu-h2">Menu</h2>
-          <ul class="menu-list">
-            <li class="menu-item">
-              <div class="menu-div">
+          <h2 class="menu__title">Menu</h2>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <div class="menu__info">
                 <img src="./images/bread.png" alt="bread" />
-                <h3 class="menu-h3">Breads</h3>
+                <h3 class="menu__name">Breads</h3>
               </div>
-              <button class="menu-button">order</button>
+              <button class="menu__button">order</button>
             </li>
-            <li class="menu-item">
-              <div class="menu-div">
+            <li class="menu__item">
+              <div class="menu__info">
                 <img
-                  class="images-first"
+                  class="images__first"
                   src="./images/Group50(1)(1).png"
                   alt="bread"
                 />
-                <h3 class="menu-h3">Bekary</h3>
+                <h3 class="menu__name">Bekary</h3>
               </div>
-              <button class="menu-button">order</button>
+              <button class="menu__button">order</button>
             </li>
-            <li class="menu-item">
-              <div class="menu-div">
+            <li class="menu__item">
+              <div class="menu__info">
                 <img
                   class="images"
                   src="./images/Group28(1)(1).png"
                   alt="bread"
                 />
-                <h3 class="menu-h3">Cakes & Capcakes</h3>
+                <h3 class="menu__name">Cakes & Capcakes</h3>
               </div>
-              <button class="menu-button">order</button>
+              <button class="menu__button">order</button>
             </li>
-            <li class="menu-item">
-              <div class="menu-div">
-                <img
-                  class="images-last"
-                  src="./images/Group29(1).png"
-                  alt="bread"
-                />
-                <h3 class="menu-h3">Coockies&Pretzels</h3>
+            <li class="menu__item">
+              <div class="menu__info">
+                <img class="images" src="./images/Group29(1).png" alt="bread" />
+                <h3 class="menu__name">Coockies&Pretzels</h3>
               </div>
-              <button class="menu-button">order</button>
+              <button class="menu__button">order</button>
             </li>
           </ul>
         </div>
       </section>
-      <section class="stars">
+      <section class="ingredient">
         <div class="container">
-          <ul class="stars-list">
+          <ul class="ingredient__list">
             <li>
               <img src="./images/bread.png" alt="bread" />
-              <div class="number-list">
-                <ol class="number">
-                  <li class="number-item">
+              <div class="ingredient__list--number">
+                <ol class="list__number">
+                  <li class="ingredient__item--number">
                     <h3>Flour with fresh wheat</h3>
                   </li>
-                  <li class="number-item">
+                  <li class="ingredient__item--number">
                     <h3>New drozzhi</h3>
                   </li>
-                  <li class="number-item">
+                  <li class="ingredient__item--number">
                     <h3>Fresh eggs</h3>
                   </li>
-                  <li class="number-item">
+                  <li class="ingredient__item--number">
                     <h3>Water from the well</h3>
                   </li>
                 </ol>
@@ -160,22 +156,22 @@
             </li>
             <li>
               <img
-                class="img-cookies"
+                class="ingredient__image--cookies"
                 src="./images/cookies-Menu.png"
                 alt="cookies"
               />
-              <div class="stars-number-list">
-                <ol class="number">
-                  <li class="number-item">
+              <div class="ingredient__list--number">
+                <ol class="list__number">
+                  <li class="ingredient__item--number">
                     <h3>Flour with fresh wheat</h3>
                   </li>
-                  <li class="number-item">
+                  <li class="ingredient__item--number">
                     <h3>New drozzhi</h3>
                   </li>
-                  <li class="number-item">
+                  <li class="ingredient__item--number">
                     <h3>Fresh eggs</h3>
                   </li>
-                  <li class="number-item">
+                  <li class="ingredient__item--number">
                     <h3>Water from the well</h3>
                   </li>
                 </ol>
@@ -183,22 +179,22 @@
             </li>
             <li>
               <img
-                class="img-tarte"
+                class="ingredient__image--tarte"
                 src="./images/tarte-Menu.png"
-                alt="tarte-Menu"
+                alt="tarte"
               />
-              <div class="number-last-list">
-                <ol class="number">
-                  <li class="number-item">
+              <div class="ingredient__list--number">
+                <ol class="list__number">
+                  <li class="ingredient__item--number">
                     <h3>Flour with fresh wheat</h3>
                   </li>
-                  <li class="number-item">
+                  <li class="ingredient__item--number">
                     <h3>New drozzhi</h3>
                   </li>
-                  <li class="number-item">
+                  <li class="ingredient__item--number">
                     <h3>Fresh eggs</h3>
                   </li>
-                  <li class="number-item">
+                  <li class="ingredient__item--number">
                     <h3>Water from the well</h3>
                   </li>
                 </ol>
@@ -207,78 +203,76 @@
           </ul>
         </div>
       </section>
-      <section class="villains">
+      <section class="info">
         <div class="container">
-          <h2 class="villains-h2">Why TRADITIONALARTISAX BAKERY ?</h2>
-          <ul class="villains-list">
-            <li class="villains-item">
-              <img class="order" src="../images/order.png" alt="order" />
-              <h3 class="villains-h3">Order at home</h3>
+          <h2 class="info__title">Why TRADITIONALARTISAX BAKERY ?</h2>
+          <ul class="info__list">
+            <li class="info__item">
+              <img class="info__image" src="../images/order.png" alt="order" />
+              <h3 class="info__name">Order at home</h3>
             </li>
-            <li class="villains-item">
+            <li class="info__item">
               <img src="./images/fresh-food.png" alt="food" />
-              <h3 class="villains-h3">Fresh food</h3>
+              <h3 class="info__name">Fresh food</h3>
             </li>
-            <li class="villains-item">
+            <li class="info__item">
               <img src="./images/hotel.png" alt="" />
-              <h3 class="villains-h3">Speed Delivery 24 h</h3>
+              <h3 class="info__name">Speed Delivery 24 h</h3>
             </li>
           </ul>
         </div>
       </section>
       <section class="navigation">
-        <div class="navigation-flex container">
+        <div class="navigation__container container">
           <ul>
             <li>
-              <h2 class="navigation-h2">Where</h2>
+              <h2 class="navigation__party__first">Where</h2>
               <img
-                class="navigation-img"
+                class="navigation__image"
                 src="./images/navigation.png"
                 alt="navigation"
               />
             </li>
           </ul>
-
           <ul>
-            <li><h2 class="navigation-item-h2 how-h2">How</h2></li>
-            <li><p class="navigation-how-text">+38 055 123 13 12</p></li>
+            <li><h2 class="navigation__party__seconds party__seconds__title">How</h2></li>
+            <li><p class="party__seconds__text">+38 055 123 13 12</p></li>
             <li>
-              <p class="navigation-text">Tik tok.:@TR.Bekary</p>
-              <p class="navigation-text">Inst:@TR.Bekary</p>
+              <p class="navigation__text">Tik tok.:@TR.Bekary</p>
+              <p class="navigation__text">Inst:@TR.Bekary</p>
             </li>
           </ul>
-
           <ul>
-            <li><h2 class="navigation-item-h2 when-h2">When</h2></li>
-            <li><p class="navigation-when-text">with 8:30 to 20:30</p></li>
+            <li><h2 class="navigation__party__seconds party__last__title">When</h2></li>
+            <li><p class="party__last__text">with 8:30 to 20:30</p></li>
           </ul>
         </div>
       </section>
     </main>
     <footer>
-      <section class="container footer">
-        <div class="footer-div">
+      <section class="container footer__container">
+        <div class="footer">
           <div>
-            <h2 class="footer-title">TRADITIONAL ARTISAX BAKERY</h2>
-            <p class="footer-p">We want be helthy</p>
+            <h2 class="footer__title">TRADITIONAL ARTISAX BAKERY</h2>
+            <p class="footer__prétitle">We want be helthy</p>
           </div>
-          <ul class="footer-list">
-            <li class="footer-item">
-              <a href="#" class="footer-a">About</a>
-              <p class="footer-text">About us</p>
-              <p class="footer-text">Features</p>
-              <p class="footer-text">News & Blog</p>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__link">About</a>
+              <p class="footer__text">About us</p>
+              <p class="footer__text">Features</p>
+              <p class="footer__text">News & Blog</p>
             </li>
-            <li class="footer-item">
-              <a href="#" class="footer-a">Movement</a>
-              <p class="footer-text">What Eatly</p>
-              <p class="footer-text">Support Us</p>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Movement</a>
+              <p class="footer__text">What Eatly</p>
+              <p class="footer__text">Support Us</p>
             </li>
-            <li class="footer-item">
-              <a href="#" class="footer-a">Company</a>
-              <p class="footer-text">Why Eatly</p>
-              <p class="footer-text">Capital</p>
-              <p class="footer-text">Securaty</p>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Company</a>
+              <p class="footer__text">Why Eatly</p>
+              <p class="footer__text">Capital</p>
+              <p class="footer__text">Securaty</p>
             </li>
           </ul>
         </div>

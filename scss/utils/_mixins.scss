@@ -1,0 +1,20 @@
+%text{
+    font-family: "Inter";
+    font-weight: 300;
+    font-size: 24px;
+}
+%flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin button($display,$family,$weight,$size,$bg,$color,$border){
+    display: $display;
+    font-family: $family;
+    font-weight: $weight;
+    font-size: $size;
+    background-color: $bg;
+    color: $color;
+    border: $border;
+}

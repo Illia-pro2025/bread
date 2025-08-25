@@ -1,4 +1,5 @@
 @import "utils/color";
+@import "utils/mixins";
 @import "base/reset";
 @import "component/container";
 @import "layouts/header";
@@ -6,6 +7,6 @@
 @import "component/modal";
 @import "layouts/menu";
 @import "layouts/navigation";
-@import "layouts/villains";
-@import "layouts/stars";
+@import "layouts/info";
+@import "layouts/ingredient";
 @import "layouts/footer";

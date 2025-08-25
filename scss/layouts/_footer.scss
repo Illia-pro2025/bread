@@ -1,59 +1,50 @@
-
 .footer {
+  @extend %flex;
+  &__container {
     background-color: #202023;
     padding-bottom: 44px;
     padding-top: 40px;
   }
-  .footer-div {
-    display: flex;
-    align-items: center;
-  }
-  .footer-list {
-    display: flex;
-    justify-content: space-between;
-    gap: 120px;
-  }
-  .footer-title {
+
+  &__title {
     font-family: "Inter";
     font-weight: 200;
     font-size: 40px;
-    line-height: 100%;
     color: var(--white);
+    line-height: 100%;
+    letter-spacing: 0%;
     margin-bottom: 16px;
     margin-right: 77px;
   }
-  .footer-p {
-    font-family: "Inter";
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 100%;
+  &__prétitle {
+    @extend %text;
     color: var(--white);
   }
-  .footer-a {
+  &__list {
+    @extend %flex;
+    gap: 120px;
+  }
+  &__link {
     display: inline-block;
-    font-family: "Inter";
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 100%;
+    @extend %text;
     text-align: center;
     color: var(--white);
     margin-bottom: 41px;
   }
-  .footer-text {
-    font-family: "Inter";
-    font-weight: 300;
-    font-size: 24px;
+  &__text {
     line-height: 100%;
+    letter-spacing: 0%;
+    @extend %text;
     color: var(--white);
   }
-  
+}
 .time {
-    font-family: "Inter";
-    font-weight: 100;
-    font-size: 20px;
-    line-height: 100%;
-    color: var(--white);
-    display: block;
-    margin-top: 85px;
-    text-align: center;
-  }
+  font-family: "Inter";
+  font-weight: 100;
+  font-size: 20px;
+
+  color: var(--white);
+  display: block;
+  margin-top: 85px;
+  text-align: center;
+}

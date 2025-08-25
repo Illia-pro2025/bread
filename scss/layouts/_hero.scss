@@ -5,87 +5,97 @@
   padding-top: 155px;
   padding-bottom: 33px;
   position: relative;
-}
+  &__title {
+    font-family: "Inter";
+    font-weight: 200;
+    font-style: Light;
+    font-size: 70px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: var(--white);
+    margin-bottom: 22px;
+    max-width: 560px;
+  }
+  &__text {
+    font-family: "Inter";
+    font-weight: 300;
+    font-style: Light;
+    font-size: 21px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: var(--white);
+    margin-bottom: 33px;
+    max-width: 560px;
+  }
 
-.text {
-  font-family: "Inter";
-  font-weight: 300;
-  font-size: 21px;
-  color: var(--white);
-  line-height: 100%;
-  margin-bottom: 33px;
-  max-width: 560px;
-}
+  &__button {
+    @include button(
+      $display: inline-block,
+      $family: "Inter",
+      $weight: 300,
+      $size: 24px,
+      $bg: #b47b48,
+      $color: var(--white),
+      $border: #b47b48
+    );
+    padding: 16px 33px;
+    border-radius: 17px;
+    margin-bottom: 125px;
+    transition: background-color 250ms ease-in;
+  }
 
-.button-a {
-  display: inline-block;
-  font-family: "Inter";
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 100%;
-  color: var(--white);
-  padding: 16px 33px;
-  border-radius: 17px;
-  background-color: #b47b48;
-  margin-bottom: 125px;
-  border: #b47b48;
-  transition: background-color 250ms ease-in;
-}
-
-.hero-list {
-  display: flex;
-  justify-content: space-between;
-}
-.hero-item {
-  background-image: linear-gradient(
-    81.4deg,
-    #000000 -110.34%,
-    rgb(57, 53, 53) 80.32%
-  );
-  padding: 0px 19px;
-  display: flex;
-  transition: background-image 250ms ease-in;
-  &:hover,
-  &:focus {
+  .hero__list {
+    @extend %flex;
+  }
+  .hero__item {
     background-image: linear-gradient(
       81.4deg,
       #000000 -110.34%,
-      #ebad51 80.32%
+      rgb(57, 53, 53) 80.32%
     );
+    padding: 0px 19px;
+    display: flex;
+    transition: background-image 250ms ease-in;
+    &:hover,
+    &:focus {
+      background-image: linear-gradient(
+        81.4deg,
+        #000000 -110.34%,
+        #ebad51 80.32%
+      );
+    }
   }
-}
-
-.hero-h4 {
-  font-family: "Inter";
-  font-weight: 200;
-  font-size: 24px;
-  line-height: 100%;
-  text-align: center;
-  color: var(--white);
-  margin-top: 51px;
-}
-.hero-p {
-  text-align: center;
-  font-family: "Inter";
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 100%;
-  color: var(--white);
-  margin-top: 13px;
-}
-.hero-div-div {
-  max-width: 120px;
-}
-.btn {
-  width: 79px;
-  height: 34px;
-  display: block;
-  font-family: "Inter";
-  font-weight: 900;
-  font-size: 16px;
-  line-height: 100%;
-  background-color: #c85312;
-  margin: 35px auto;
-  color: var(--white);
-  border: #c85312;
+  &__party__info {
+    max-width: 120px;
+  }
+  &__price {
+    @extend %text;
+    font-weight: 200;
+    text-align: center;
+    color: var(--white);
+    margin-top: 51px;
+  }
+  &__name {
+    text-align: center;
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    color: var(--white);
+    margin-top: 13px;
+  }
+  &__button__info {
+    width: 79px;
+    height: 34px;
+    @include button(
+      $display: block,
+      $family: "Inter",
+      $weight: 900,
+      $size: 16px,
+      $bg: #c85312,
+      $color: var(--white),
+      $border: #c85312
+    );
+    margin: 35px auto;
+  }
 }
