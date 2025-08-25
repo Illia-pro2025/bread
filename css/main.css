@@ -79,7 +79,7 @@ ul {
 }
 
 .hero {
-  background-image: url(../../images/header__fon.png);
+  background-image: url(./../images/header__fon.png);
   background-repeat: no-repeat;
   background-position: center;
   padding-top: 155px;
@@ -344,7 +344,7 @@ ul {
 
 .info {
   display: block;
-  background-image: linear-gradient(89.59deg, #000000 8.49%, rgba(3, 3, 3, 0)), url(../../images/info__fon.jpg);
+  background-image: linear-gradient(89.59deg, #000000 8.49%, rgba(3, 3, 3, 0)), url(./../images/info__fon.jpg);
   background-repeat: no-repeat;
   background-position: center;
   padding-bottom: 56px;
@@ -376,7 +376,7 @@ ul {
   background-color: #202023;
   padding-bottom: 48px;
   padding-top: 90px;
-  background-image: url(../../images/ingredient__fon.png);
+  background-image: url(./../images/ingredient__fon.png);
 }
 .ingredient__list {
   display: -webkit-box;
